@@ -22,5 +22,8 @@ LOCAL_RESOURCE_FILES := $(addprefix $(LOCAL_PATH)/, res)
 
 LOCAL_PACKAGE_NAME := com.android.phone.common
 
+# Enable dexpreopt to speed boot time
+WITH_DEXPREOPT := true
+
 include $(BUILD_PACKAGE)
 include $(CLEAR_VARS)
